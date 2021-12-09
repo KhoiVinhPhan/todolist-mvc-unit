@@ -3,7 +3,6 @@
 - Get project: $ git clone https://github.com/KhoiVinhPhan/todolist-mvc-unit.git
 - Create database in local
 - Connect project to database in file: app/connection.php
-	
 	mysql:host=localhost;dbname=mvc_php', 'root', ''
 - Create table "todo_list":
 
@@ -15,6 +14,6 @@
   		PRIMARY KEY (`id`)
 	) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-SET FOREIGN_KEY_CHECKS = 1;
+	SET FOREIGN_KEY_CHECKS = 1;
 
 
