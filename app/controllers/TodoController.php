@@ -24,9 +24,11 @@ class TodoController extends BaseController
 
     public function store()
     {
-        $task = $_POST['task'];
-        $date = $_POST['date'];
-        Task::store($task, $date);
+        $title = $_POST['title'];
+        $start = $_POST['start'];
+        $end = $_POST['end'];
+        $status = $_POST['status'];
+        Task::store($title, $start, $end, $status);
         header('Location: /');
     }
 
@@ -40,9 +42,11 @@ class TodoController extends BaseController
     public function update()
     {
         $id = $_GET['id'];
-        $task = $_POST['task'];
-        $date = $_POST['date'] == "" ? null : $_POST['date'];
-        Task::update($id, $task, $date);
+        $title = $_POST['title'];
+        $start = $_POST['start'];
+        $end = $_POST['end'];
+        $status = $_POST['status'];
+        Task::update($id, $title, $start, $end, $status);
         header('Location: /');
     }
 
